@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package sum;
+option go_package="./sum/protosum";
+
+message Sum {
+    int64 a = 1;
+    int64 b = 2;
+}
+
+message SumRequest {
+    Sum sum = 1;
+}
+
+message SumResponse {
+    int64 result = 1;
+}
+
+service SumService {
+    rpc Sum (SumRequest) returns (SumResponse);
+}
