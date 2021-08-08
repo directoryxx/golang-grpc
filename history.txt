@@ -1,0 +1,40 @@
+    1  apt update
+    2  apt install clang-format
+    3  apt install -y protobuf-compiler
+    4  protoc 
+    5  protoc --version
+    6   go get -u google.golang.org/grpc
+    7   go get -u google.golang.org/grpc
+    8  go get -u google.golang.org/protobuf
+    9  go get -u google.golang.org/protobuf
+   10  go mod init
+   11  go mod init golang-grpc
+   12  go get -u google.golang.org/protobuf
+   13  go get github.com/golang/protobuf/proto
+   14  go get github.com/golang/protobuf/proto
+   15  go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.26
+   16  go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.1
+   17  protoc
+   18  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   19  cd greet/greetpb/
+   20  protoc greet.proto --go_out=plugins=grpc:.
+   21  protoc greet.proto --go_out=plugins=grpc:.
+   22  cd ../../
+   23  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   24  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   25  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   26  protoc greet/greetpb/greet.proto --go-grpc_out=...
+   27  go get -u github.com/golang/protobuf/protoc-gen-go
+   28  go mod init golang-grpc
+   29  go mod tidy
+   30  protoc --go_out=. *.proto
+   31  protoc --go_out=. greet/greetpb/
+   32  protoc --go_out=. greet/greetpb/*.proto
+   33  protoc --go_out=. greet/greetpb/*.proto
+   34  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   35  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   36  protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
+   37  go get -u google.golang.org/protobuf
+   38  go get -u github.com/golang/protobuf/protoc-gen-go
+   39   go get -u google.golang.org/grpc
+   40  history > history.txt
