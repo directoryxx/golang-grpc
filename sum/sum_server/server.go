@@ -21,7 +21,6 @@ func (s *serversum) Sum(ctx context.Context, req *protosum.SumRequest) (*protosu
 	}
 
 	return res, nil
-
 }
 
 func main() {
