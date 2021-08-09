@@ -44,20 +44,20 @@ func (s *server) LongGreet(stream greetpb.GreetService_LongGreetServer) error {
 	result := "Hello "
 	for {
 		req, err := stream.Recv()
+		firstName := req.GetGreeting().GetFirstName()
+		lastName := req.GetGreeting().GetLastName()
+		result += firstName + " " + lastName + " !"
 		if err == io.EOF {
 			res := &greetpb.LongGreetResponse{
 				Result: result,
 			}
 			// Sudah paling terakhir (End of file)
 			// Kirim balik datanya
-			stream.SendAndClose(res)
+			return stream.SendAndClose(res)
 		}
 		if err != nil {
 			panic(err)
 		}
-		firstName := req.GetGreeting().FirstName
-		lastName := req.GetGreeting().LastName
-		result += firstName + " " + lastName + " !"
 
 	}
 }
