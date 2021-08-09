@@ -49,6 +49,7 @@ func (s *server) LongGreet(stream greetpb.GreetService_LongGreetServer) error {
 				Result: result,
 			}
 			// Sudah paling terakhir (End of file)
+			// Kirim balik datanya
 			stream.SendAndClose(res)
 		}
 		if err != nil {
