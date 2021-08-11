@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package squareroot;
+option go_package="./squareroot/protosquareroot";
+
+message SquareRootRequest {
+    int64 number = 1;
+}
+
+message SquareRootResponse {
+    int64 result = 1;
+}
+
+service PrimeService {
+    rpc SquareRoot (SquareRootRequest) returns (SquareRootResponse);
+}
